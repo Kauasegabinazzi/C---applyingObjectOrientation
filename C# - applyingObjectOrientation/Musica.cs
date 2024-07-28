@@ -20,4 +20,9 @@
             Console.WriteLine($"A musica não está disponivel");
         }
     }
+
+    public void ExibiNomeArtista()
+    {
+        Console.WriteLine($"o nome do artista e o nome é {this.artista} e {this.nome}");
+    }
 }
