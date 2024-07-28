@@ -5,3 +5,12 @@ musica.duracao = 250;
 musica.disponivel = true;
 
 musica.ExibirFicha();
+
+
+Conta conta = new Conta();
+conta.titular = "Gui Lima";
+conta.idConta = 1;
+conta.saldo = 20.00f;
+conta.senha = 1234;
+
+conta.ExibirInformacoes();
