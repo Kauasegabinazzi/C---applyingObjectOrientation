@@ -3,7 +3,17 @@
     public string nome;
     public string artista;
     public int duracao;
-    public bool disponivel;
+    private bool disponivel;
+
+    public void WriteDiponivel(bool value)
+    {
+        disponivel = value;
+    }
+
+    public bool leDisponicel()
+    {
+        return disponivel;
+    }
 
     public void ExibirFicha()
     {
