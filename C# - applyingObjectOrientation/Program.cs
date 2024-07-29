@@ -1,8 +1,8 @@
 ﻿Musica musica = new Musica();
-musica.nome = "Teste";
-musica.artista = "teste2";
-musica.duracao = 250;
-musica.WriteDiponivel(true);
+musica.Name = "Teste";
+musica.Artista = "teste2";
+musica.Duracao = 250;
+musica.Disponivel = true;
 
 musica.ExibirFicha();
 

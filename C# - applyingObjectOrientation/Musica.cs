@@ -1,27 +1,27 @@
 ﻿class Musica
 {
-    public string nome;
-    public string artista;
-    public int duracao;
-    private bool disponivel;
+    public string Name { get; set; }
+    public string Artista { get; set; }
+    public int Duracao { get; set; }
+    public bool Disponivel { get; set; }
 
-    public void WriteDiponivel(bool value)
-    {
-        disponivel = value;
-    }
+    //public void WriteDiponivel(bool value)
+    //{
+    //    disponivel = value;
+    //}
 
-    public bool leDisponicel()
-    {
-        return disponivel;
-    }
+    //public bool leDisponicel()
+    //{
+    //    return disponivel;
+    //}
 
     public void ExibirFicha()
     {
-        Console.WriteLine($"nome: {nome}");
-        Console.WriteLine($"artista: {artista}");
-        Console.WriteLine($"duracao: {duracao}");
+        Console.WriteLine($"nome: {Name}");
+        Console.WriteLine($"artista: {Artista}");
+        Console.WriteLine($"duracao: {Duracao}");
 
-        if (disponivel)
+        if (Disponivel)
         {
             Console.WriteLine($"A musica está disponivel");
         }
@@ -33,6 +33,6 @@
 
     public void ExibiNomeArtista()
     {
-        Console.WriteLine($"o nome do artista e o nome é {this.artista} e {this.nome}");
+        Console.WriteLine($"o nome do artista e o nome é {this.Artista} e {this.Name}");
     }
 }
