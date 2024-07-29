@@ -5,6 +5,7 @@ musica.Duracao = 250;
 musica.Disponivel = true;
 
 musica.ExibirFicha();
+Console.WriteLine(musica.ResumeInfo);
 
 
 Conta conta = new Conta();
