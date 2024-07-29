@@ -1,13 +1,13 @@
 ﻿class Conta
 {
-    public string titular = "";
-    public int idConta = 0;
-    public float saldo = 0;
-    public int senha  = 0;
+    public string Titular { get; set; }
+    public int IdConta { get; set; }
+    public float Saldo { get; set; }
+    public int Senha { get; set; }
 
     public void ExibirInformacoes()
     {
-        Console.WriteLine($"titular: {this.titular}");
-        Console.WriteLine($"saldo: {this.saldo}");
+        Console.WriteLine($"titular: {this.Titular}");
+        Console.WriteLine($"saldo: {this.Saldo}");
     }
 }
