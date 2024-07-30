@@ -1,5 +1,5 @@
 ﻿
-class Produto
+class Product
 {
     private double price;
     private int stocks;
@@ -31,5 +31,32 @@ class Produto
 
     public string ProductInfo => $"{this.Name} {this.Brand} - {this.Price}";
 
+}
+
+class StockOfProducts
+{
+    private List<Product> list { get; set; } = new List<Product>();
+
+    public void Add(Product product)
+    {
+        list.Add((product));
+        Console.WriteLine($"Product {product.Name} was add");
+    }
+
+    public void Display()
+    {
+        if (list.Count == 0)
+        {
+            Console.WriteLine("stock empty");
+        }
+        else
+        {
+            Console.WriteLine("List of products:");
+            foreach (var product in list)
+            {
+                Console.WriteLine(product.ProductInfo);
+            }
+        }
+    }
 }
 
