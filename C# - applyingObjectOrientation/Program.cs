@@ -26,5 +26,8 @@ album.Name = "The opera";
 
 Musica musica = new Musica();
 musica.Name = "Love of my live";
+musica.Duracao = 210;
 
 album.Add(musica);
+
+album.Exibir();
