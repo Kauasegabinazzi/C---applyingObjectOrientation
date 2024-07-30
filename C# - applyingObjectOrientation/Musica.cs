@@ -1,10 +1,13 @@
-﻿class Musica
+﻿using C____applyingObjectOrientation;
+
+class Musica
 {
     public string Name { get; set; }
     public string Artista { get; set; }
     public int Duracao { get; set; }
     public bool Disponivel { get; set; }
     public string ResumeInfo =>  $"A musica {Name} é da banda topCool";
+    public Genero genero = new Genero();
 
     //public void WriteDiponivel(bool value)
     //{
