@@ -50,3 +50,8 @@ musica.Duracao = 210;
 album.Add(musica);
 
 album.Exibir();
+
+Banda queen = new Banda();
+queen.Name = "queen";
+queen.Add(album);
+queen.Exibi();
