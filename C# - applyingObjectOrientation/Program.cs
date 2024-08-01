@@ -40,18 +40,20 @@
 
 using C____applyingObjectOrientation;
 
+Banda queen = new Banda();
+queen.Name = "queen";
+
 Album album = new Album();
 album.Name = "The opera";
 
-Musica musica = new Musica();
+Musica musica = new Musica(queen);
 musica.Name = "Love of my live";
 musica.Duracao = 210;
+
 
 album.Add(musica);
 
 album.Exibir();
 
-Banda queen = new Banda();
-queen.Name = "queen";
 queen.Add(album);
 queen.Exibi();
