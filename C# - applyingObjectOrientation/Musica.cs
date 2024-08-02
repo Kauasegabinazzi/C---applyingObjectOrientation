@@ -2,9 +2,10 @@
 
 class Musica
 {
-    public Musica(Banda artista)
+    public Musica(Banda artista, string name)
     {
         Artista = artista;
+        Name = name;
     }
 
     public string Name { get; set; }
@@ -27,7 +28,7 @@ class Musica
     public void ExibirFicha()
     {
         Console.WriteLine($"nome: {Name}");
-        Console.WriteLine($"artista: {Artista}");
+        Console.WriteLine($"artista: {Artista.Name}");
         Console.WriteLine($"duracao: {Duracao}");
 
         if (Disponivel)

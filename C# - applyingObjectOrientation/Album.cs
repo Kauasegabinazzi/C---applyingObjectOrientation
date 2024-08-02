@@ -1,7 +1,13 @@
 ﻿class Album
 {
     private List<Musica> list = new List<Musica>();
-    public string Name { get; set; }
+    public string Name { get; }
+
+    public Album(string name)
+    {
+        Name = name;
+    }
+
     public int duracaoTotal => list.Sum(song => song.Duracao);
 
     public void Add(Musica musica)
@@ -18,4 +24,6 @@
         }
         Console.WriteLine($"Total duração do album : {this.duracaoTotal}");
     }
+
+
 }

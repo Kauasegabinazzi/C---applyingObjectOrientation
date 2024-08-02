@@ -1,7 +1,7 @@
 ﻿class Banda
 {
     private List<Album> albums = new List<Album>();
-    public string Name { get; set; }
+    public string Name { get; }
     public void Add(Album album)
     {
         albums.Add(album);
@@ -13,5 +13,10 @@
         foreach (Album album in albums) { 
             Console.WriteLine($"Album : {album.Name} ({album.duracaoTotal})");
         }
+    }
+
+    public Banda(string name)
+    {
+        Name = name;
     }
 }
