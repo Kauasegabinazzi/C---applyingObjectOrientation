@@ -53,6 +53,11 @@ Musica musica = new Musica(queen, "Love of my live")
 album.Add(musica);
 queen.Add(album);
 
-album.Exibir();
-queen.Exibi();
-musica.ExibirFicha();
+//album.Exibir();
+//queen.Exibi();
+//musica.ExibirFicha();
+
+Holder titular = new Holder("sadsadsad", "3434343243", "asdsadsa, asdsadasds");
+Account c = new Account(titular, 2, 34243, 300000);
+
+Console.WriteLine(c.Info);
