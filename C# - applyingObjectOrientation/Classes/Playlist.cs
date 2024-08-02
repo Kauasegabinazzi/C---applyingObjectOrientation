@@ -4,7 +4,7 @@ namespace C____applyingObjectOrientation.Classes;
 
 class Playlist
 {
-    public List<Musica> Musicas = new List<Musica>();
+    private List<Musica> Musicas = new List<Musica>();
     public int Ordem { get; set; }
     public string Tema { get; set; }
 
