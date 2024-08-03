@@ -40,24 +40,29 @@
 
 using C____applyingObjectOrientation;
 
-Banda queen = new Banda("queen");
+//Banda queen = new Banda("queen");
 
-Album album = new Album("The opera");
+//Album album = new Album("The opera");
 
-Musica musica = new Musica(queen, "Love of my live")
-{
-    Duracao = 210,
-    Disponivel = true,
-};
+//Musica musica = new Musica(queen, "Love of my live")
+//{
+//    Duracao = 210,
+//    Disponivel = true,
+//};
 
-album.Add(musica);
-queen.Add(album);
+//album.Add(musica);
+//queen.Add(album);
 
-//album.Exibir();
-//queen.Exibi();
-//musica.ExibirFicha();
+////album.Exibir();
+////queen.Exibi();
+////musica.ExibirFicha();
 
-Holder titular = new Holder("sadsadsad", "3434343243", "asdsadsa, asdsadasds");
-Account c = new Account(titular, 2, 34243, 300000);
+//Holder titular = new Holder("sadsadsad", "3434343243", "asdsadsa, asdsadasds");
+//Account c = new Account(titular, 2, 34243, 300000);
 
-Console.WriteLine(c.Info);
+//Console.WriteLine(c.Info);
+
+Episodeo ep = new(1, "Tecnic", 45);
+ep.Add("claudio");
+ep.Add("mateus");
+Console.WriteLine(ep.Resume);
