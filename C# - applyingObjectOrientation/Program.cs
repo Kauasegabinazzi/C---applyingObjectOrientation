@@ -65,4 +65,18 @@ using C____applyingObjectOrientation;
 Episodeo ep = new(1, "Tecnic", 45);
 ep.Add("claudio");
 ep.Add("mateus");
-Console.WriteLine(ep.Resume);
+
+Episodeo ep1 = new(1, "Técnicas de facilitação", 45);
+ep1.Add("Maria");
+ep1.Add("Marcelo");
+
+Episodeo ep2 = new(2, "Tecnicas de aprendizado", 67);
+ep2.Add("Fernando");
+ep2.Add("Marcos");
+ep2.Add("Flavia");
+
+Podcast podcast = new("Podcast especial", "Daniel");
+podcast.Add(ep1);
+podcast.Add(ep2);
+podcast.Add(ep);
+podcast.DisplayDetails();
